@@ -37,6 +37,7 @@ public class RobotMap {
   public static UsbCamera camera1;
   public static UsbCamera camera2;
   public static Compressor aCompressorCompressor;
+  //
 
   public static Encoder enc;
   
