@@ -86,13 +86,13 @@ public class Robot extends TimedRobot {
   NetworkTableEntry ty = table.getEntry("ty"); 
   NetworkTableEntry ta = table.getEntry("ta");
 
-//   double x = tx.getDouble(0.0);
-//   double y = ty.getDouble(0.0);
-    // double area = ta.getDouble(0.0);
+  double x = tx.getDouble(0.0);
+  double y = ty.getDouble(0.0);
+  double area = ta.getDouble(0.0);
 
-    // SmartDashboard.putNumber("LimelightX", x);
-    // SmartDashboard.putNumber("LimelightY", y);
-    // SmartDashboard.putNumber("LimelightArea", area);
+    SmartDashboard.putNumber("LimelightX", x);
+    SmartDashboard.putNumber("LimelightY", y);
+    SmartDashboard.putNumber("LimelightArea", area);
 
     // float Kp = -0.1f;
     //std::shared_ptr<NetworkTable> table = NetworkTable::GetTable("limelight");
