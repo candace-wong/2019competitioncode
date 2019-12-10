@@ -94,16 +94,16 @@ public class Robot extends TimedRobot {
     SmartDashboard.putNumber("LimelightY", y);
     SmartDashboard.putNumber("LimelightArea", area);
 
-    // float Kp = -0.1f;
-    //std::shared_ptr<NetworkTable> table = NetworkTable::GetTable("limelight");
-    // float tx = table->GetNumber("tx");
-    // if (joystick->GetRawButton(2)){
-    //   float heading_error = tx;
-    //   steering_adjust = Kp * tx;
+    float Kp = -0.1f;
+    std::shared_ptr<NetworkTable> table = NetworkTable::GetTable("limelight");
+    float tx = table->GetNumber("tx");
+    if (joystick->GetRawButton(2)){
+      float heading_error = tx;
+      steering_adjust = Kp * tx;
 
-    //   left_command+=steering_adjust; 
-    //   right_command-=steering_adjust;
-    // }
+      left_command+=steering_adjust; 
+      right_command-=steering_adjust;
+    }
 
   }
 
